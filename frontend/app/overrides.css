@@ -1,0 +1,11 @@
+/* Operational affordances: preserve the cockpit layout while keeping long queues usable. */
+html { scroll-behavior: smooth; }
+body { overflow-y: scroll; }
+.content { min-height: 100vh; }
+.tasks { max-height: min(56vh, 560px); overflow-y: auto; overscroll-behavior: contain; padding-right: 5px; }
+.tasks::-webkit-scrollbar { width: 6px; }
+.tasks::-webkit-scrollbar-thumb { background: #33465d; border-radius: 8px; }
+.profile { border-left: 0; border-right: 0; background: transparent; color: inherit; width: 100%; text-align: left; }
+.profile:hover { background: #121820; border-radius: 6px; }
+.date { cursor: pointer; }
+@media (max-width: 650px) { .tasks { max-height: none; overflow: visible; } }
