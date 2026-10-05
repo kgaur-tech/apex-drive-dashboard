@@ -16,7 +16,7 @@ A premium, BMW-inspired productivity cockpit. The repository is an npm-workspace
 3. `npm run prisma:generate -w backend && npm run prisma:migrate -w backend`
 4. Run `npm run dev`, then open `http://localhost:3000`.
 
-The dashboard ships with browser-local demo data so its interaction design can be previewed immediately. Connect its API client/auth screens to the supplied backend URL for persisted, user-owned production data.
+Without `NEXT_PUBLIC_API_URL`, the dashboard opens in a browser-local preview mode with seeded data. Once the API URL is configured, it presents secure sign-in/sign-up and persists each user’s tasks through the supplied backend.
 
 ## API
 
